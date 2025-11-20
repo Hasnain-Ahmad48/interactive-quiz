@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Web Dev Quiz</h1>
+            <div class="timer" id="timer">Time: 60s</div>
+        </header>
+
+
+        <div id="start-screen" class="screen">
+            <p class="instructions">You have 1 minute to answer 10 questions. Good luck!</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+
+
+        <div id="quiz-screen" class="screen hide">
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <div id="question-container">
+                <h2 id="question" class="question-text">Question goes here?</h2>
+                <div id="answer-buttons" class="answer-buttons">
+
+                </div>
+            </div>
+
+            <div class="controls">
+                <span id="question-count">Question 1 of 5</span>
+                <button id="next-btn" class="btn hide">Next</button>
+            </div>
+        </div>
+
+
+        <div id="result-screen" class="screen hide">
+            <h2>Quiz Completed!</h2>
+            <div class="score-display" id="score">0 / 5</div>
+            <p class="message" id="message">Good effort!</p>
+            <button id="restart-btn" class="btn">Restart Quiz</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
